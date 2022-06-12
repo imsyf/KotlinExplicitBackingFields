@@ -1,10 +1,9 @@
 class Model {
-    private val _names: MutableList<String> = mutableListOf()
     val names: List<String>
-        get() = _names
+        field: MutableList<String> = mutableListOf()
 
     fun addName(name: String) {
-        _names.add(name)  // has access to `add` method
+        names.add(name)  // has access to `add` method
     }
 }
 
